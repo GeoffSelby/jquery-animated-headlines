@@ -10,10 +10,10 @@ Animated headlines, with interchangeable words that replace one another through 
 npm install jquery-animated-headlines
 ```
 
-### npm
+### cdn
 Coming soon.
 
-### Default Usage
+## Default Usage
 
 Include the css in your head.
 ```html
