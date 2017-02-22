@@ -1,0 +1,97 @@
+@import 'variables';
+
+@import '../../src/scss/mixins';
+
+@import 'layout';
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: {
+        size: 1.6rem;
+        family: $primary-font;
+    }
+    color: $color-1;
+    background-color: $color-3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.animation-type {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.title {
+    position: relative;
+    height: 160px;
+    line-height: 230px;
+    text-align: center;
+
+    h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    @include MQ(M) {
+        line-height: 250px;
+    }
+
+    @include MQ(L) {
+        height: 200px;
+        line-height: 300px;
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro {
+    margin: 4em auto;
+
+    @include MQ(M) {
+        margin: 5em auto;
+    }
+
+    @include MQ(L) {
+        margin: 6em auto;
+    }
+}
+
+.ah-headline {
+    font-size: 3rem;
+    line-height: 1.2;
+
+    @include MQ(M) {
+        font-size: 4.4rem;
+        font-weight: 300;
+    }
+
+    @include MQ(L) {
+        font-size: 6rem;
+    }
+}
