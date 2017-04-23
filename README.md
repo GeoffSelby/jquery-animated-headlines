@@ -10,8 +10,10 @@ Animated headlines, with interchangeable words that replace one another through 
 npm install jquery-animated-headlines
 ```
 
-### cdn
-Coming soon.
+### bower
+```bash
+bower install jquery-animated-headlines
+```
 
 ## Default Usage
 
